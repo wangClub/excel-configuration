@@ -1,0 +1,70 @@
+module.exports = {
+  parser: 'babel-eslint',
+  extends: ['airbnb', 'prettier', 'plugin:compat/recommended'],
+  env: {
+    browser: true,
+    node: true,
+    es6: true,
+    mocha: true,
+    jest: true,
+    jasmine: true,
+  },
+  globals: {
+    APP_TYPE: true,
+  },
+  rules: {
+    'react/jsx-filename-extension': [1, {extensions: ['.js']}],
+    'react/jsx-wrap-multilines': 0,
+    'react/prop-types': 0,
+    'react/forbid-prop-types': 0,
+    'react/jsx-one-expression-per-line': 0,
+    'import/no-unresolved': [2, {ignore: ['^@/', '^umi/']}],
+    'import/no-extraneous-dependencies': [2, {optionalDependencies: true}],
+    'jsx-a11y/no-noninteractive-element-interactions': 0,
+    'jsx-a11y/click-events-have-key-events': 0,
+    'jsx-a11y/anchor-is-valid': 0,
+    'linebreak-style': 0,
+    "no-console": 0,//
+    "arrow-body-style": 1,//要求箭头函数体使用大括号
+    "consistent-return": [0],//// 要求 return 语句要么总是指定返回的值，要么不指定
+    //"generator-star-spacing": [0],
+    "global-require": [1],//// 要求 require() 出现在顶层模块作用域中
+    "import/extensions": [0],
+    "import/prefer-default-export": [0],
+    "jsx-a11y/no-static-element-interactions": [0],
+    "no-bitwise": [0],//禁用按位运算符
+    "no-else-return": [0],//禁止 if 语句中有 return 之后有 else
+    "no-nested-ternary": [0],
+    "no-useless-escape": [0],
+    "no-restricted-syntax": [0],
+    "no-use-before-define": [0],
+    "react/jsx-no-bind": [0],
+    "react/prefer-stateless-function": [0],
+    "require-yield": [1],
+    "react/sort-comp": 1,
+    "react/no-array-index-key": 1,
+    "react/destructuring-assignment": 1,
+    "lines-between-class-members": 1,
+    "react/jsx-tag-spacing": 0,
+    "react/jsx-first-prop-new-line": 0,
+    "react/jsx-indent-props": 0,
+    "no-unneeded-ternary": 1,
+    "react/jsx-closing-bracket-location": 1,
+    "no-useless-constructor": 1,
+    "react/jsx-indent": 1,
+    "react/self-closing-comp": 0,
+    "react/jsx-closing-tag-location": 0,
+    "prefer-destructuring": 0,
+    "no-underscore-dangle": 0,
+    "class-methods-use-this": 0,
+    "react/no-unused-state": 0,
+    "no-prototype-builtins": 0,
+    "no-param-reassign": 0,
+    "array-callback-return": 0,
+    "prefer-const":0,
+    "dot-notation":0
+  },
+  settings: {
+    polyfills: ['fetch', 'promises', 'url'],
+  },
+};
