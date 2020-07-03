@@ -7,7 +7,7 @@ class test extends Component {
   render(){
 
     return(
-      <PageHeaderWrapper title='测试列表'></PageHeaderWrapper>
+      <PageHeaderWrapper title='这是测试页面'></PageHeaderWrapper>
     );
   }
 
