@@ -7,7 +7,7 @@ class test extends Component {
   render(){
 
     return(
-      <PageHeaderWrapper title='提交成功'></PageHeaderWrapper>
+      <PageHeaderWrapper title='提交成功123'></PageHeaderWrapper>
     );
   }
 
